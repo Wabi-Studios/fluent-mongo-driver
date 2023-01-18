@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "fluent-mongo-driver",
     platforms: [
-       .macOS(.v10_15)
+      .iOS(.v13),
+      .macOS(.v10_15),
     ],
     products: [
         .library(name: "FluentMongoDriver", targets: ["FluentMongoDriver"]),
